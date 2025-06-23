@@ -4,16 +4,16 @@ require("dotenv").config();
 module.exports = {
     // GENERAL DETAILS
     token: process.env.TOKEN || " ", // your bot token
-    prefix: process.env.PREFIX || "!", // your default prefix
-    dev: [" "], // your Discord user Id & developer user Id
+    prefix: process.env.PREFIX || "v", // your default prefix
+    dev: ["561170896480501790"], // your Discord user Id & developer user Id
     embedColor: process.env.EMBED_COLOR || "5865F2", // your embeded hex color
     leaveTimeout: parseInt(process.env.LEAVE_TIMEOUT) || 60000, // leave timeout in milliseconds
     defaultVolume: parseInt(process.env.DEFAULT_VOLUME) || 100, // Default volume when bot joins a voice channel
     minVolume: parseInt(process.env.MIN_VOLUME) || 1, // min volume
     maxVolume: parseInt(process.env.MAX_VOLUME) || 100, // max volume
     mongoUri: process.env.MONGO_URI || " ", // your MongoDB Uri
-    geniusApiKey: process.env.GENIUS_API_KEY || " ", // your genius api key
-    supportServerUrl: process.env.SUPPORT_SERVER_URL || " ", // your support server url
+    geniusApiKey: process.env.GENIUS_API_KEY || "LRz5g1uDMp3SnQo6M_TGWCBIwlQsbsT3xlCQO2XEVxqo_G4jwyIFyErn_YxvGMo00PFqogchobU0fioQuaQbJg", // your genius api key
+    supportServerUrl: process.env.SUPPORT_SERVER_URL || "https://discord.gg", // your support server url
 
     // RAINLINK DETAILS
     lavalinkSource: process.env.LAVALINK_SOURCE || "sp", // Available Lavalink sources, based on the sources you've enabled in your Lavalink configuration. For example, if you enable the Spotify source, then "sp" will refer to "spsearch". Will be used if "sourceID" option is provided in the play command.
@@ -31,9 +31,9 @@ module.exports = {
     rainlinkPlugins: [new VoicePlugin()], // rainlink plugins, to add more plugins, just add them to the array. Available plugins: https://github.com/RainyXeon/Rainlink/#-plugins
     rainlinkNodes: [
         {
-            name: "Lunox",
-            host: "localhost",
-            port: 2333,
+            name: "Veleoty",
+            host: "129.153.166.41",
+            port: 13592,
             auth: "youshallnotpass",
             secure: false,
             driver: "lavalink/v4/koinu", // Available drivers based on your Lavalink version: https://github.com/RainyXeon/Rainlink#-drivers
